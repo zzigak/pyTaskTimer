@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ $# -eq 0 ]; then
+    echo "Usage: pytimer taskName"
+    exit 1
+fi
+
+task_name="$1"
+
+python3 pytimer.py "$task_name"
